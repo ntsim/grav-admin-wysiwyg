@@ -1,0 +1,27 @@
+name: Admin Wysiwyg
+version: 0.1.0
+description: WYSIWYG editor for Grav Admin
+icon: plug
+author:
+  name: Nicholas Tsim
+  email: nicholastsim@gmail.com
+homepage: https://github.com/nicholas-tsim/grav-plugin-admin-wysiwyg
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/nicholas-tsim/grav-plugin-admin-wysiwyg/issues
+docs: https://github.com/nicholas-tsim/grav-plugin-admin-wysiwyg/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool

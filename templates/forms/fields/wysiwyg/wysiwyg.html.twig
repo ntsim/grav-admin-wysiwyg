@@ -1,0 +1,22 @@
+{% block field %}
+    <div class="form-field {{ field.classes|default('') }}">
+
+        <div class="form-data wysiwyg-container">
+            <textarea
+                    id="wysiwyg-in"
+                    name="{{ (scope ~ field.name)|fieldName }}"
+                    {% if field.disabled or isDisabledToggleable %}disabled="disabled"{% endif %}
+                    {% if field.readonly in ['on', 'true', 1] %}readonly="readonly"{% endif %}
+            >{{ value|join("\n")|e('html') }}</textarea>
+
+            <textarea id="wysiwyg-editor"
+                    {% if field.disabled or isDisabledToggleable %}disabled="disabled"{% endif %}
+                    {% if field.placeholder %}placeholder="{{ field.placeholder|tu }}"{% endif %}
+                    {% if field.autofocus in ['on', 'true', 1] %}autofocus="autofocus"{% endif %}
+                    {% if field.novalidate in ['on', 'true', 1] %}novalidate="novalidate"{% endif %}
+                    {% if field.readonly in ['on', 'true', 1] %}readonly="readonly"{% endif %}
+                    {% if field.validate.required in ['on', 'true', 1] %}required="required"{% endif %}>
+            </textarea>
+        </div>
+    </div>
+{% endblock %}

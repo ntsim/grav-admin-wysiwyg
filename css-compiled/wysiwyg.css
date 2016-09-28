@@ -1,0 +1,12 @@
+.wysiwyg-container .trumbowyg-editor {
+  background: #f6f6f6;
+  cursor: text; }
+
+.wysiwyg-container p {
+  padding: 0; }
+
+#admin-main .admin-block .wysiwyg-container h1 {
+  padding: 0 0 0.5rem; }
+
+#wysiwyg-in {
+  display: none; }

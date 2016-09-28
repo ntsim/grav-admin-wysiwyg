@@ -1,0 +1,23 @@
+{
+  "name": "admin-wysiwyg",
+  "version": "1.0.0",
+  "description": "Grav Admin WYSIWYG editor",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.14.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-sass": "^2.3.2",
+    "showdown": "^1.4.3",
+    "to-markdown": "^3.0.1",
+    "trumbowyg": "^2.3.0"
+  },
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicholas Tsim <nicholastsim@gmail.com>",
+  "license": "MIT"
+}
