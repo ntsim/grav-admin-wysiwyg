@@ -28,10 +28,7 @@
                 removeformatPasted: true,
                 svgPath: '/user/plugins/admin-wysiwyg/css-compiled/icons.svg',
             })
-            .on('tbwchange', e => {
-                console.log(e);
-                $input.text(toMarkdown(e.target.value))
-            });
+            .on('tbwchange', e => $input.text(toMarkdown(e.target.value)));
 
         // Setup the editor block with the parsed Markdown
         $editor.trumbowyg('html', inputHtml);
